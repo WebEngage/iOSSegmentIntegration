@@ -16,7 +16,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    //Initialise WebEngage SDK
+    [[WebEngage sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+    
+    SEGAnalyticsConfiguration *configuration = [SEGAnalyticsConfiguration configurationWithWriteKey:@"tNrxedNhMyLMuU8MHmQhdjJau3F49ZoO"];
+    configuration.trackApplicationLifecycleEvents = NO; // Enable this to record certain application events automatically!
+    configuration.recordScreenViews = NO; // Enable this to record screen views automatically!
+    [SEGAnalytics debug:YES];
+    
+    //Register WebEngage Integration With Segment
+    [configuration use:[WEGSegmentIntegrationFactory sharedInstance]];
+    
+    [SEGAnalytics setupWithConfiguration:configuration];
+    
     return YES;
 }
 

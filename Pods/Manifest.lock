@@ -1,0 +1,17 @@
+PODS:
+  - Analytics (3.5.4)
+  - WebEngage (3.4.2):
+    - WebEngage/Xcode8 (= 3.4.2)
+  - WebEngage/Xcode8 (3.4.2)
+
+DEPENDENCIES:
+  - Analytics
+  - WebEngage
+
+SPEC CHECKSUMS:
+  Analytics: b462a87eb6e3609e5fb38416117b58011aa57ff8
+  WebEngage: 53fa4524a576f5677239c8aeb90a86fdee637159
+
+PODFILE CHECKSUM: 13da92b385ff20470cb035325b59038c99561d53
+
+COCOAPODS: 1.1.1

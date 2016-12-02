@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Analytics/SEGAnalytics.h>
+#import "WEGSegmentIntegrationFactory.h"
+#import <WebEngage/WebEngage.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
