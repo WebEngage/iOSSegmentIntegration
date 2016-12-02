@@ -20,7 +20,10 @@
     //Initialise WebEngage SDK
     [[WebEngage sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     
-    SEGAnalyticsConfiguration *configuration = [SEGAnalyticsConfiguration configurationWithWriteKey:@"tNrxedNhMyLMuU8MHmQhdjJau3F49ZoO"];
+    //Initialise Segment
+    SEGAnalyticsConfiguration *configuration = [SEGAnalyticsConfiguration configurationWithWriteKey:@"XXXXXXXXXXXXXXXXXXXXXXXXXXX"];
+    
+    //Additional Segment Configuration
     configuration.trackApplicationLifecycleEvents = NO; // Enable this to record certain application events automatically!
     configuration.recordScreenViews = NO; // Enable this to record screen views automatically!
     [SEGAnalytics debug:YES];
